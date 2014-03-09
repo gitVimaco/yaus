@@ -16,5 +16,6 @@ class B62encodeTagLibSpec extends Specification {
     }
 
     void "test something"() {
+        // TODO: test taglib
     }
 }

@@ -10,7 +10,6 @@ class ShortenerService {
         if (url != null) {
             link = new Link(url: url, ip: ip)
             link.save()
-            println "${link.errors.errorCount}"
         }
         link
     }
