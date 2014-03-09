@@ -38,3 +38,7 @@ h2 {
 .button {
     width: 20%
 }
+
+.errors {
+    color: red;
+}

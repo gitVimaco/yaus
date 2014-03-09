@@ -10,7 +10,9 @@
     <h1><g:message code="yaus.title" /></h1>
     <h2><g:message code="yaus.description" /></h2>
     <div class="box">
-        ${link.url} : <g:encodeLink linkId="${link.id}"/>
+        <div>${link.url}</div>
+        <div>&#11015;&#11015;&#11015;</div>
+        <div><g:encodeLink linkId="${link.id}"/></div>
     </div>
 </body>
 </html>

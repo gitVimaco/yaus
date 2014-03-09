@@ -11,14 +11,16 @@
     <h2><g:message code="yaus.description" /></h2>
     <g:form controller="shortener" action="shorten">
         <div class="box">
-            <g:field type="text" name="url" class="textbox" autofocus="true" required="required" />
-            <g:submitButton name="${message(code: 'yaus.shorten')}" class="button"/>
+            <div>
+                <g:field type="url" name="url" class="textbox" autofocus="true" required="required" />
+                <g:submitButton name="${message(code: 'yaus.shorten')}" class="button"/>
+            </div>
             <g:hasErrors bean="${link}">
-                <ul>
+                <div class="errors">
                     <g:eachError var="err" bean="${link}">
-                        <li>${err.field}</li>
+                         <g:if test="${err.field} == 'url"><g:message code="yaus.Link.url.invalid.url.message" /></g:if>
                     </g:eachError>
-                </ul>
+                </div>
             </g:hasErrors>
         </div>
     </g:form>
