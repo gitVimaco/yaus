@@ -14,7 +14,7 @@ The URL space will grow exponentially by adding characters.
 
 A checksum character has been added to avoid direct iteration of the URL space.
 
-If the shortening of an existing URL is done, a new code is generated:
+If the shortening of an existing URL is requested, a new code is generated:
  - performance is increased when shortening
  - future features: 2 users may shorten same URL and keep track of their own link
 
