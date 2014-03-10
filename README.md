@@ -1,7 +1,7 @@
 yaus
 ====
 
-Yet Another URL SHortener
+Yet Another URL Shortener
 -------------------------
 
 Demo site: http://yaus.no-ip.biz
@@ -22,4 +22,6 @@ Expected future features:
  - Keep track of visited short links to grab some stats
  - Cache last generated and most visited URLs
  - User account: view stats
- - Copy short URL to clipboard
+ - Usability improvements:
+  - Copy short URL to clipboard
+  - Go back on short URL view
