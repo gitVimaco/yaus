@@ -42,3 +42,21 @@ h2 {
 .errors {
     color: red;
 }
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    border: 1px solid darkred;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid darkred;
+}
+
+thead {
+    background-color: #f3d222;
+}

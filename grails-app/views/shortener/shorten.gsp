@@ -12,7 +12,8 @@
     <div class="box">
         <div>${link.url}</div>
         <div>&#11015;&#11015;&#11015;</div>
-        <div><g:encodeLink linkId="${link.id}"/></div>
+        <div><g:encodeLink linkId="${link.id}"/><br/></div>
+        <div><g:link url="/"><g:message code="yaus.back" /></g:link></div>
     </div>
 </body>
 </html>
