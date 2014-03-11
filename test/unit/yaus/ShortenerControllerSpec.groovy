@@ -39,7 +39,7 @@ class ShortenerControllerSpec extends Specification {
         then:
         def link = model.link
         link.errors.errorCount == 1
-        view == null
+        view == '/shortener/index'
         response.redirectedUrl == null
     }
 

@@ -9,7 +9,7 @@ import spock.lang.Specification
  * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
  */
 @TestFor(UnshortenerController)
-@Mock(Link)
+@Mock([Link, Visit, UnshortenerService])
 class UnshortenerControllerSpec extends Specification {
 
     def setup() {
@@ -41,7 +41,7 @@ class UnshortenerControllerSpec extends Specification {
 
     void "test index with an invalid code"() {
         given:
-        params.shortCode = "impossibleCode+" // '+' is not a possible character in our Base62 encoding algorithm
+        params.code = "impossibleCode+" // '+' is not a possible character in our Base62 encoding algorithm
 
         when:
         controller.index()
@@ -55,9 +55,9 @@ class UnshortenerControllerSpec extends Specification {
         given:
         def SAMPLE_URL = 'http://www.example.com'
         def link = new Link(url: SAMPLE_URL, ip: '127.0.0.1')
-        link.save()
+        link.save(flush: true) // persists link
         def id = link.id
-        params.shortCode = Base62.encode(id)
+        params.code = Base62.encode(id)
 
         when:
         controller.index()
