@@ -19,7 +19,7 @@ If the shortening of an existing URL is requested, a new code is generated:
  - future features: 2 users may shorten same URL and keep track of their own link
 
 Expected future features:
- - Keep track of visited short links to grab some stats (In process: testing, pending UI improvement)
+ - Keep track of visited short links to grab some stats (In process: test pending) http://yaus.no-ip.biz/stats
  - Cache last generated and most visited URLs
  - User account: view stats
  - Usability improvements:
