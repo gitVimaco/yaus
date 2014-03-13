@@ -1,7 +1,7 @@
 package yaus
 
 class StatsController {
-    static MAX_RESULTS = 3
+    static MAX_RESULTS = 10
 
     def index() {
         def criteria = Visit.createCriteria()
