@@ -12,6 +12,9 @@
     <g:form controller="shortener" action="shorten">
         <div class="box">
             <div>
+                <g:message code="yaus.enter.url" />
+            </div>
+            <div>
                 <g:field type="url" name="url" class="textbox" autofocus="true" required="required" />
                 <g:submitButton name="${message(code: 'yaus.shorten')}" class="button"/>
             </div>
