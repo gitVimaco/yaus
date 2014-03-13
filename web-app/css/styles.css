@@ -60,3 +60,21 @@ td, th {
 thead {
     background-color: #f3d222;
 }
+
+.prevLink, .step, .currentStep, .nextLink {
+    padding: 7px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #CC3300;
+    margin: 3px;
+    margin-top: 10px;
+    background-color: #f3d222;
+}
+
+.currentStep {
+    background-color: #FFFFE6;
+}
+
+.paging {
+    padding-top: 20px;
+}
